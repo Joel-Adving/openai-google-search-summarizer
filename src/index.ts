@@ -49,7 +49,7 @@ app.get('/search', async (req, res) => {
     }
 
     const completion = await openai.chat.completions.create({
-      model: process.env.LLM_MODEL!,
+      model: process.env.LLM_MODEL || 'gpt-3.5-turbo',
       messages: [
         {
           role: 'system',
