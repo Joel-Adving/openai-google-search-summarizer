@@ -1,0 +1,31 @@
+{
+  "name": "web-search-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "postinstall": "npx puppeteer browsers install chrome",
+    "dev": "tsx watch src",
+    "start": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@googleapis/customsearch": "^3.0.0",
+    "express": "^4.19.2",
+    "natural": "^7.0.5",
+    "openai": "^4.45.0",
+    "puppeteer": "^22.8.0",
+    "stopword": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.11",
+    "@types/stopword": "^2.0.3",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.10.1",
+    "typescript": "^5.4.5"
+  }
+}
